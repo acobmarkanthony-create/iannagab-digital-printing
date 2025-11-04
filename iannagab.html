@@ -1,0 +1,392 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>IannaGab Digital Printing Services</title>
+  <meta name="description" content="IannaGab Digital Printing — Tarpaulins, shirts, stickers, business cards, signage. Fast turnaround. Local pickup & delivery." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#f8fafc; --card:#ffffff; --muted:#64748b; --accent:#4f46e5; --accent-2:#ec4899;
+      --maxw:1100px;
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--bg);color:#0f172a;line-height:1.45}
+    .container{max-width:var(--maxw);margin:0 auto;padding:28px;}
+    header{background:linear-gradient(90deg,#fff,#fff);position:sticky;top:0;z-index:50;border-bottom:1px solid rgba(15,23,42,0.04);backdrop-filter: blur(4px);}
+    .nav{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:10px 0;}
+    .brand{display:flex;gap:12px;align-items:center}
+    .logo{width:56px;height:56px;border-radius:12px;background:linear-gradient(135deg,var(--accent),var(--accent-2));display:flex;align-items:center;justify-content:center;color:white;font-weight:800;font-size:18px}
+    nav a{margin-left:14px;text-decoration:none;color:inherit;font-weight:600}
+    .btn{background:var(--accent);color:white;padding:10px 14px;border-radius:10px;border:0;font-weight:700;cursor:pointer;display:inline-flex;align-items:center;gap:8px}
+    .hero{display:grid;grid-template-columns:1fr;gap:22px;align-items:center;padding:42px 0}
+    @media(min-width:880px){ .hero{grid-template-columns:1fr 520px} .nav a{display:inline-block} .mobile-only{display:none} }
+    h1{font-size:34px;margin:0 0 10px 0;line-height:1.05}
+    p.lead{margin:0;color:var(--muted)}
+    .card{background:var(--card);border-radius:12px;padding:16px;box-shadow:0 6px 18px rgba(15,23,42,0.04)}
+    .services{display:grid;grid-template-columns:repeat(1,1fr);gap:14px;margin-top:18px}
+    @media(min-width:720px){ .services{grid-template-columns:repeat(3,1fr)} }
+    .service-item{padding:18px;border-radius:12px;border:1px solid rgba(2,6,23,0.04);background:linear-gradient(180deg,rgba(255,255,255,0.9),#fff)}
+    .gallery{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-top:12px}
+    @media(min-width:720px){ .gallery{grid-template-columns:repeat(4,1fr)} }
+    .gallery img{width:100%;height:140px;object-fit:cover;border-radius:8px}
+    footer{margin-top:32px;padding:26px 0;background:#0f172a;color:#e6eef8;border-top:1px solid rgba(255,255,255,0.03)}
+    .grid-2{display:grid;grid-template-columns:1fr;gap:16px}
+    @media(min-width:880px){ .grid-2{grid-template-columns:1fr 380px} }
+    label{font-size:13px;color:var(--muted);display:block;margin-bottom:6px}
+    input[type="text"],input[type="email"],textarea,select{width:100%;padding:10px;border-radius:8px;border:1px solid rgba(2,6,23,0.06);font-size:14px}
+    input[type="file"]{font-size:13px}
+    .small{font-size:13px;color:var(--muted)}
+    .muted{color:var(--muted)}
+    .inline{display:inline-block}
+    .pill{background:rgba(79,70,229,0.08);color:var(--accent);padding:8px 12px;border-radius:999px;font-weight:700}
+    .contact-list{display:flex;flex-direction:column;gap:10px;margin-top:8px}
+    .map{width:100%;height:220px;border-radius:10px;border:1px solid rgba(2,6,23,0.06);overflow:hidden}
+    .center{display:flex;align-items:center;justify-content:center}
+    .mb16{margin-bottom:16px}
+    .mt12{margin-top:12px}
+    .mt24{margin-top:24px}
+    .text-right{text-align:right}
+    .order-files{margin-top:8px;font-size:13px;color:var(--muted)}
+    .hero-image{border-radius:12px;overflow:hidden;box-shadow:0 18px 40px rgba(2,6,23,0.06)}
+    .badge{display:inline-block;padding:6px 10px;border-radius:8px;background:linear-gradient(90deg,#eef2ff,#fff0f6);font-weight:700;color:var(--accent)}
+    .mobile-menu{display:flex;gap:10px;align-items:center}
+    .footer-grid{display:grid;grid-template-columns:repeat(1,1fr);gap:18px}
+    @media(min-width:880px){ .footer-grid{grid-template-columns:1fr 320px} }
+    .social{display:flex;gap:10px}
+    a.icon{display:inline-flex;align-items:center;justify-content:center;width:40px;height:40px;border-radius:10px;background:rgba(255,255,255,0.04);text-decoration:none;color:inherit}
+    /* small utilities */
+    .mt8{margin-top:8px}
+    .muted-sm{color:rgba(15,23,42,0.6)}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="brand">
+        <div class="logo">IG</div>
+        <div>
+          <div style="font-weight:800;font-size:16px">IannaGab Digital Printing</div>
+          <div class="small muted">Fast • Quality • Affordable</div>
+        </div>
+      </div>
+
+      <nav class="mobile-menu">
+        <div class="pill">Local: Mariveles, Bataan</div>
+        <div class="mobile-only" style="display:none">menu</div>
+        <div style="display:flex;align-items:center;gap:10px">
+          <a class="btn" id="placeOrderBtn">Place Order</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- HERO -->
+    <section class="hero">
+      <div>
+        <div class="badge">Open for Orders</div>
+        <h1>IannaGab Digital Printing — <span style="color:var(--accent)">Quality prints</span>, fast turnaround</h1>
+        <p class="lead mt8">We specialize in tarpaulins, T-shirts, stickers, business cards, signage, and more. Local pickup and delivery options. Competitive pricing for single prints and bulk orders.</p>
+
+        <div class="mt16">
+          <button class="btn" id="ctaOrderTop">Get a Quote / Order</button>
+          <a href="#services" style="margin-left:12px;text-decoration:none;padding:10px 14px;border-radius:10px;border:1px solid rgba(2,6,23,0.06);font-weight:700">Our Services</a>
+        </div>
+
+        <div class="mt24 card">
+          <div style="display:flex;gap:12px;align-items:center">
+            <div style="width:64px;height:64px;border-radius:8px;background:linear-gradient(135deg,var(--accent),var(--accent-2));display:flex;align-items:center;justify-content:center;color:white;font-weight:800">IG</div>
+            <div>
+              <div style="font-weight:700">IannaGab Digital Printing</div>
+              <div class="small muted">Mariveles, Bataan — replace with full address</div>
+            </div>
+          </div>
+          <div class="mt12 contact-list">
+            <div><strong>Phone:</strong> <span class="muted">0912-345-6789</span></div>
+            <div><strong>Email:</strong> <span class="muted">info@iannagabprint.com</span></div>
+          </div>
+        </div>
+
+        <div class="mt24">
+          <h3 style="margin:0 0 8px 0">Why choose us?</h3>
+          <ul class="muted-sm">
+            <li>• Quick turnaround for urgent jobs</li>
+            <li>• Artwork setup help and file-check</li>
+            <li>• Discounted rates for bulk orders</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="hero-image card">
+        <img src="https://images.unsplash.com/photo-1581093588401-84b8a3b8c6b9?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=9d3cb6b3a2b08c3d1d00a5ddbe44b2d0" alt="Printing machine" style="width:100%;height:100%;object-fit:cover;min-height:360px">
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="mt24">
+      <div style="display:flex;align-items:center;justify-content:space-between">
+        <h2 style="margin:0">Services</h2>
+        <div class="small muted">We handle small runs and bulk projects</div>
+      </div>
+
+      <div class="services mt12">
+        <div class="service-item">
+          <div style="font-weight:700">Tarpaulin Printing</div>
+          <div class="small muted mt8">Large-format outdoor banners. Weather-resistant materials, high-impact inks.</div>
+        </div>
+        <div class="service-item">
+          <div style="font-weight:700">T-Shirt & Apparel</div>
+          <div class="small muted mt8">DTG, heat-transfer and screen-print options for shirts and uniforms.</div>
+        </div>
+        <div class="service-item">
+          <div style="font-weight:700">Sticker & Decals</div>
+          <div class="small muted mt8">Vinyl stickers, sticker sheets, and die-cut decals with laminate finishes.</div>
+        </div>
+        <div class="service-item">
+          <div style="font-weight:700">Business Cards</div>
+          <div class="small muted mt8">Standard, premium cardstock, matte/gloss, and spot UV available.</div>
+        </div>
+        <div class="service-item">
+          <div style="font-weight:700">Signage & Posters</div>
+          <div class="small muted mt8">Indoor/outdoor signage: foamboard, acrylic, corrugated plastic, aluminum.</div>
+        </div>
+        <div class="service-item">
+          <div style="font-weight:700">ID, Lamination & More</div>
+          <div class="small muted mt8">ID cards, lamination, and assorted finishing services.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section id="gallery" class="mt24">
+      <div style="display:flex;align-items:center;justify-content:space-between">
+        <h2 style="margin:0">Gallery</h2>
+        <div class="small muted">Recent jobs — click to view full image</div>
+      </div>
+
+      <div class="gallery mt12">
+        <img src="https://images.unsplash.com/photo-1602524812217-cd8eecb2d179?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=3d1b67d504d3b1a2f3fb7f94a6ee3d1f" alt="">
+        <img src="https://images.unsplash.com/photo-1536305030016-3f3b7f3f1a7b?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=0b2b5b30fa6a3c5f9d6b9dcd7f3b4a0c" alt="">
+        <img src="https://images.unsplash.com/photo-1581091012184-7d5f5b4c0a3f?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=7d3a2b41f4b402d2e9b6b2a5bce2d9b0" alt="">
+        <img src="https://images.unsplash.com/photo-1602524812216-8a3f2a8d9b1c?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=4c8a5b27e6c8aee3f8a2d7bb3b5f6c1d" alt="">
+      </div>
+    </section>
+
+    <!-- ABOUT & CONTACT -->
+    <section class="mt24 grid-2">
+      <div>
+        <h2 style="margin:0">About IannaGab</h2>
+        <p class="muted-sm mt8">IannaGab Digital Printing Services is a local print shop committed to high-quality printed materials, friendly service, and fast turnarounds. We serve businesses, churches, schools, and individuals in Mariveles and nearby areas.</p>
+
+        <div class="mt12 card">
+          <h3 style="margin:0 0 8px 0">What we offer</h3>
+          <ul class="muted-sm">
+            <li>• File and artwork setup consultation</li>
+            <li>• Multiple finishing options (laminate, spot UV, grommets)</li>
+            <li>• Delivery & local pickup</li>
+          </ul>
+        </div>
+      </div>
+
+      <aside class="card">
+        <h3 style="margin:0 0 8px 0">Contact & Location</h3>
+        <div class="small muted">Address, phone, email — replace with your real info</div>
+
+        <div class="mt12">
+          <div><strong>Address</strong></div>
+          <div class="muted-sm">Mariveles, Bataan</div>
+
+          <div class="mt8"><strong>Phone</strong></div>
+          <div class="muted-sm">0912-345-6789</div>
+
+          <div class="mt8"><strong>Email</strong></div>
+          <div class="muted-sm">info@iannagabprint.com</div>
+        </div>
+
+        <div class="mt12 map">
+          <iframe title="map" src="https://maps.google.com/maps?q=Mariveles%20Bataan&t=&z=13&ie=UTF8&iwloc=&output=embed" style="width:100%;height:100%;border:0"></iframe>
+        </div>
+      </aside>
+    </section>
+
+    <!-- CONTACT FORM / ORDER -->
+    <section class="mt24">
+      <div style="display:flex;align-items:center;justify-content:space-between">
+        <h2 style="margin:0">Send a Message</h2>
+        <div class="small muted">Or use the Order form for uploads & quotes</div>
+      </div>
+
+      <div class="mt12 card">
+        <form id="contactForm" onsubmit="handleContact(event)">
+          <div style="display:grid;grid-template-columns:1fr;gap:10px">
+            <div>
+              <label>Full name</label>
+              <input type="text" id="cname" required placeholder="Your name">
+            </div>
+            <div>
+              <label>Email</label>
+              <input type="email" id="cemail" required placeholder="you@example.com">
+            </div>
+            <div>
+              <label>Message</label>
+              <textarea id="cmessage" rows="4" required placeholder="Tell us about your job — size, quantity, finish"></textarea>
+            </div>
+            <div class="text-right">
+              <button type="submit" class="btn">Send Message</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- ORDER MODAL (hidden) -->
+    <div id="orderModal" style="display:none;position:fixed;inset:0;z-index:80;background:rgba(2,6,23,0.5);align-items:center;justify-content:center;padding:20px">
+      <div style="max-width:680px;width:100%;">
+        <div class="card" style="padding:18px;position:relative">
+          <div style="display:flex;justify-content:space-between;align-items:center">
+            <div>
+              <h3 style="margin:0">Place an Order</h3>
+              <div class="small muted">Attach your artwork and order details below</div>
+            </div>
+            <button onclick="toggleOrder(false)" style="background:none;border:0;font-weight:700;font-size:18px;cursor:pointer">✕</button>
+          </div>
+
+          <form id="orderForm" onsubmit="submitOrder(event)" style="margin-top:14px">
+            <div style="display:grid;gap:10px">
+              <div>
+                <label>Full name</label>
+                <input type="text" id="o_name" required>
+              </div>
+              <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px">
+                <div>
+                  <label>Email</label>
+                  <input type="email" id="o_email" required>
+                </div>
+                <div>
+                  <label>Phone</label>
+                  <input type="text" id="o_phone" required>
+                </div>
+              </div>
+              <div>
+                <label>Order details</label>
+                <textarea id="o_details" rows="3" placeholder="e.g. 2 tarpaulins 4x6ft, matte finish"></textarea>
+              </div>
+              <div>
+                <label>Attach files (images, pdf)</label>
+                <input type="file" id="o_files" accept="image/*,.pdf,.ai,.eps" multiple>
+                <div id="fileList" class="order-files"></div>
+              </div>
+
+              <div style="display:flex;gap:10px;justify-content:flex-end;margin-top:8px">
+                <button type="button" onclick="toggleOrder(false)" style="padding:10px 14px;border-radius:8px;border:1px solid rgba(2,6,23,0.06)">Cancel</button>
+                <button type="submit" class="btn">Submit Order</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <footer>
+    <div class="container footer-grid">
+      <div>
+        <div style="font-weight:800">IannaGab Digital Printing</div>
+        <div class="muted-sm mt8">Local printing services — tarpaulins, shirts, stickers, business cards, and more.</div>
+
+        <div class="mt12 small muted">
+          <div>Open hours: Mon–Sat 8:00–6:00</div>
+          <div class="mt8">Need help? Call us at <strong>0912-345-6789</strong></div>
+        </div>
+      </div>
+
+      <div>
+        <div style="display:flex;align-items:center;justify-content:space-between">
+          <div>
+            <div style="font-weight:700">Get in touch</div>
+            <div class="small muted">Send an email or visit our shop</div>
+          </div>
+          <div class="social">
+            <a class="icon" href="#" title="Facebook">f</a>
+            <a class="icon" href="#" title="Instagram">ig</a>
+          </div>
+        </div>
+
+        <div style="margin-top:14px;font-size:13px;color:rgba(255,255,255,0.8)">
+          © <span id="year"></span> IannaGab Digital Printing. All rights reserved.
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // small helpers
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Order modal toggles
+    function toggleOrder(show){
+      const m = document.getElementById('orderModal');
+      m.style.display = show ? 'flex' : 'none';
+      if(show){
+        // reset form preview
+        document.getElementById('orderForm').reset();
+        document.getElementById('fileList').textContent = '';
+      }
+    }
+    document.getElementById('placeOrderBtn').addEventListener('click', ()=> toggleOrder(true));
+    document.getElementById('ctaOrderTop').addEventListener('click', ()=> toggleOrder(true));
+
+    // file input preview
+    document.getElementById('o_files').addEventListener('change', function(){
+      const out = document.getElementById('fileList');
+      out.textContent = '';
+      const files = Array.from(this.files || []);
+      if(files.length === 0){ out.textContent = 'No files attached.'; return; }
+      const names = files.map(f => f.name + (f.size ? ' (' + Math.round(f.size/1024) + ' KB)' : '') );
+      out.textContent = 'Attached: ' + names.join(', ');
+    });
+
+    // demo: contact form handler
+    function handleContact(e){
+      e.preventDefault();
+      const name = document.getElementById('cname').value.trim();
+      const email = document.getElementById('cemail').value.trim();
+      const msg = document.getElementById('cmessage').value.trim();
+      if(!name || !email || !msg){ alert('Please fill all fields.'); return; }
+      // Attempt to open default mail client with content (fallback), and also show a demo message
+      const subject = encodeURIComponent('Website inquiry from ' + name);
+      const body = encodeURIComponent(msg + "\\n\\nContact: " + name + " — " + email);
+      window.location.href = `mailto:info@iannagabprint.com?subject=${subject}&body=${body}`;
+      alert('Opening your email client to send the message. (This is demo behavior — replace with server/email integration if needed.)');
+    }
+
+    // demo: submit order (client-side only)
+    function submitOrder(e){
+      e.preventDefault();
+      const name = document.getElementById('o_name').value.trim();
+      const email = document.getElementById('o_email').value.trim();
+      const phone = document.getElementById('o_phone').value.trim();
+      const details = document.getElementById('o_details').value.trim();
+      const files = document.getElementById('o_files').files;
+      if(!name || !email || !phone){ alert('Please provide name, email, and phone.'); return; }
+
+      // For production: send this data to your server or an email API.
+      let summary = `Order submitted!\\nName: ${name}\\nEmail: ${email}\\nPhone: ${phone}\\nDetails: ${details || '(none)'}\\nFiles attached: ${files.length}`;
+      alert(summary);
+
+      // simple behavior: prepare an email (cannot attach files this way)
+      const subject = encodeURIComponent('New order from ' + name);
+      const body = encodeURIComponent(`Name: ${name}\\nEmail: ${email}\\nPhone: ${phone}\\nDetails: ${details}\\nFiles attached (count): ${files.length}`);
+      window.location.href = `mailto:info@iannagabprint.com?subject=${subject}&body=${body}`;
+
+      toggleOrder(false);
+    }
+  </script>
+</body>
+</html>
+
